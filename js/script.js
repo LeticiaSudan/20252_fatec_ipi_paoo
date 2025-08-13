@@ -1,9 +1,70 @@
-//VETORES
+//FUNÇÃO INTERNA
+// function saudacoesFactory(saudacao, nome){
+//     let a
+//     return function(){
+//         console.log(saudacao + ', ' + nome)
+//     }
+// }
 
+// let olaLeticia = saudacoesFactory('Olá', 'Leticia')
+// let tchauLeticia = saudacoesFactory('Tchau', 'Leticia')
+// olaLeticia()
+// tchauLeticia()
+
+// function ola (){
+//     let nome = 'Leticia'
+//     return function(){
+//         console.log('Olá, ' + nome)
+//     }
+// }
+// let olaResult = ola()
+// olaResult() 
+
+// function f (){
+//     let nome = 'Leticia'
+//     function g(){
+//         console.log(nome)
+//     }
+//     g()
+// }
+// f()
+
+//CLOSURES
+// let umaFuncao = function() {
+//     console.log('Fui armazenada em uma variável')
+// }
+// umaFuncao()
+
+// function f(funcao){
+//     funcao()
+// }
+// f(umaFuncao)
+
+// function g(){
+//     function outraFuncao(){
+//         console.log('Fui criada por g')
+//     }
+//     return outraFuncao
+// }
+//tem que chamar ela dessa forma pois a função só retorna a outraFuncao sem executá-la
+// const gResult = g()
+// gResult()
+//ou assim:
+// g()
+//ou:
+// f(g())
+
+
+//VETORES
 //transforma os valores do array em um único valor
 // const valores = [1, 2, 3, 4]
+//Mais prático escrever com arrow function
 // const soma = valores.reduce((acumulador, valorAtual) => acumulador + valorAtual)
 // console.log(soma)
+// se fosse com função normal:
+// const soma = valores.reduce(function(acumulador, valorAtual) {
+//     return acumulador + valorAtual
+// })
 
 // const nomes = ['Leticia', 'João', 'Amanda', 'Ana', 'Alex']
 // const apenasComA = nomes.filter(nome => nome.startsWith('A'))

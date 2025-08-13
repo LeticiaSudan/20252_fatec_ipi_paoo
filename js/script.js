@@ -1,3 +1,24 @@
+//objeto Javascript não é sinônimo de objeto JSON(JavaScript Object Notation), mas são parecidos
+//uma pessoa se chama Maria, tem 21 anos e mora na Rua 8, 121
+let pessoa2 = {
+    nome: 'Maria',
+    idade: 21,
+    endereco: {
+        logradouro: 'Rua 8',
+        numero: 121
+    }
+}
+console.log(pessoa2.endereco.logradouro + ', ' + pessoa2.endereco.numero)
+
+//uma pessoa se chama Leticia e tem 19 anos
+//{} objeto javascript (colecao pares chave-valor)
+// let pessoa = {
+//     nome: 'Leticia',
+//     idade: 19
+// }
+
+// console.log('Me chamo ' + pessoa.nome + ' e tenho ' + pessoa.idade + ' anos')
+
 //FUNÇÃO INTERNA
 // function saudacoesFactory(saudacao, nome){
 //     let a
